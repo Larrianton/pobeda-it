@@ -24,11 +24,13 @@ export const Calculator: React.FC<CalculatorPropsType> = (props) => {
     const changePaymentType = (title: string, code: string) => {
         setPaymentType(title);
         setCodePayment(code);
-
     }
 
     const toggleActiveMetal = (code: string) => {
-        setCodeMetal(code)
+        setCodeMetal(code);
+        setMetalSample("Проба метала ");
+        setPaymentType("Способ оплаты");
+        setWeight(" ");
     }
 
     const setLocalStorage = () => {
@@ -36,6 +38,13 @@ export const Calculator: React.FC<CalculatorPropsType> = (props) => {
         localStorage.setItem("paymentType", paymentType)
         localStorage.setItem("weight", weight)
         localStorage.setItem("result", result)
+    }
+
+    const clearForm = ()=> {
+        setCodePayment(" ");
+        setMetalSample("Проба метала ");
+        setPaymentType("Способ оплаты");
+        setWeight(" ");
     }
 
     const onClickCalculate = () => {
@@ -47,6 +56,7 @@ export const Calculator: React.FC<CalculatorPropsType> = (props) => {
         }
         setResult(result);
         setLocalStorage();
+        clearForm();
     }
     const isDisabled = (!metalSample && !paymentType && !weight)
     return (
