@@ -1,0 +1,99 @@
+.calculatorWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 1024px;
+    height: 537px;
+    background: white;
+    padding: 72px 40px 56px 40px;
+}
+
+.calculatorHeader {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 24px;
+    width: 944px;
+    border-bottom: 1px solid #B48565;
+    color: #101010;
+}
+
+.calculatorMain {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 40px;
+}
+
+.calculatorMain .calculatorImg {
+    font-family: Inter;
+    width: 304px;
+    height: 328px;
+    background: white center;
+    background-size: cover;
+    position: relative;
+}
+
+.calculatorPaymentTabs {
+    display: flex;
+    flex-direction: row;
+}
+
+.calculatorPaymentDescription {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    width: 205px;
+    height: 48px;
+    margin-top: 24px;
+    margin-left: 32px;
+    color: #101010;
+}
+
+.calculatorPaymentSelects {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 32px;
+
+    color: #101010;
+}
+
+.calculatorPaymentResults {
+    margin-left: 40px;
+    margin-top: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.descriptionResult {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #101010;
+}
+.btnResult {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 223px;
+    height: 40px;
+    background: #B48565;
+    border-radius: 5px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color:#F8F5EE;
+    cursor:pointer;
+}
+

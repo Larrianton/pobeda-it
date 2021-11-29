@@ -1,0 +1,41 @@
+.selectWrapper {
+    border:solid 1px #D4D4D4;
+    margin-top: 16px;
+    position: relative;
+}
+.select {
+    width: 550px;
+    height: 24px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color:#101010;
+    opacity: 80%;
+    padding: 8px 42px 8px 16px;
+
+}
+.select::after {
+    content: url(/src/common/assets/icons/vector.svg);
+    position: absolute;
+    right: 17px;
+    top: 9px;
+
+}
+
+.select.items {
+    text-align: center;
+    width: 550px;
+    height: 24px;
+    border:solid 1px #D4D4D4;
+    padding:5px ;
+    position:absolute;
+}
+
+.select.main input {
+    width: 550px;
+    height: 24px;
+    color:#101010;
+    padding: 8px 42px 8px 16px;
+}

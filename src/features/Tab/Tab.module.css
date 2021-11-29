@@ -1,0 +1,24 @@
+.btnWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 12px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color:#101010;
+    width: 83px;
+    height: 32px;
+    margin-left: 40px;
+    background-color: #F8F5EE;
+    box-sizing: border-box;
+    border-radius: 100px;
+    cursor:pointer;
+}
+.btnWrapper.btnWrapperActive {
+    background-color: #B48565;
+    border: 1px solid #B48565;
+    color:white;
+}
+
